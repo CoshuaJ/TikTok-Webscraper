@@ -1,8 +1,13 @@
 # TikTok Webscrape & Downloader
 
-# Usage
+## Installation
+- Clone repository
+- [Optional] Create virtual env for packages [$ python -m venv .venv]
+- Install requirements [$ pip install -r requirements.txt]
 
-## download.py
+## Usage
+
+### download.py
 Intended for batch downloading Favourites, requires access to your TikTok user_data.json.
 See https://support.tiktok.com/en/account-and-privacy/personalized-ads-and-data/requesting-your-data
 
@@ -10,7 +15,7 @@ See https://support.tiktok.com/en/account-and-privacy/personalized-ads-and-data/
 - Run download.py
 - Extracts URLs from user_data.json and batch downloads them using yt-dlp
 
-## scrape.py
+### scrape.py
 Intended for obtaining the URLs of a TikTok collection (not possible using user_data.json as of Jan 2024) or any other profile page, which can then be batch downloaded using yt-dlp.
 
 - Replace the 'link' variable on Line 6 with your desired page URL (for collections this requires sharing the collection from mobile)
